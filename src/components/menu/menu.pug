@@ -1,0 +1,19 @@
+//- Миксин меню
+mixin menu(items)
+	nav.b-menu
+		.b-burger.j-burger
+			.b-burger__line
+			.b-burger__line
+			.b-burger__line
+		ul.b-menu__list
+			each item in items
+				li.b-menu__item
+					a.b-menu__link(href=item.href class= {active : currentURL == item.href}) #{item.title}
+
+//- Добавляем меню
++menu([
+	{'title': 'About', 'href': 'index.html'},
+	{'title': 'Portfolio', 'href': '#portfolio'},
+	{'title': 'Services', 'href': '#services'},
+	{'title': 'Contact', 'href': '#contact'}
+])

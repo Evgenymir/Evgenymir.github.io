@@ -1,0 +1,39 @@
+.b-button {
+	@include inlineBlock();
+	@include encore(light);
+	position: relative;
+	min-width: 205px;
+	font-size: rem(24px);
+	color: $red;
+	text-align: center;
+	line-height: 18px;
+	text-decoration: none;
+	background-color: transparent;
+	border: 2px solid $red;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 18px 10px;
+	transition: color, background-color, ease 0.3s;
+
+	&:hover {
+		color: $white;
+		background-color: $red;
+
+		&+.b-mainScreen__mouse {
+			opacity: 1;
+		}
+	}
+}
+
+.b-button-red {
+	font-size: rem(20px);
+	color: $white;
+	background-color: $red;
+	padding-top: 14px;
+	padding-bottom: 14px;
+
+	&:hover {
+		color: $red;
+		background-color: transparent;
+	}
+}

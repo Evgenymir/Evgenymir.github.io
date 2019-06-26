@@ -1,0 +1,20 @@
+//- Миксин иконок
+mixin social(items)
+	.b-social
+		each item in items
+			a.b-social__link(href=item.href)
+				svg.b-social__svg(width=item.svgWidth height=item.svgHeight)
+					use(xlink:href=item.svgHref)
+
+//- Добавляем иконки
+
+//- +social([
+
+//- 	{
+//- 		'href': '#',
+//- 		'svgWidth': '37px',
+//- 		'svgHeight': '37px',
+//- 		'svgHref': '#icon-twitter'
+//- 	}
+
+//- ])

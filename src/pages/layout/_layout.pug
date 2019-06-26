@@ -1,0 +1,39 @@
+//- Подключаем конфиг с переменными
+block config
+	include _config.pug
+
+//- Инклюдим компоненты которые с миксинами
+
+
+doctype html
+html(lang="ru-RU")
+	head
+		include _head.pug
+		block title 
+			title #{headTitle}
+
+		//css
+		block cssLinks
+			link(rel="stylesheet" href=cssPath+"/main.css")
+
+	body
+
+		// Прелоадер
+		include ../../components/preloader/preloader
+		
+		// Шапка
+		
+		header.l-header
+			include _header.pug
+
+		// Контент
+		main.l-content
+			block content
+
+		// Подвал
+		footer.l-footer
+			include _footer.pug
+					
+		// script
+		block scripts
+			script(src="js/app.min.js")

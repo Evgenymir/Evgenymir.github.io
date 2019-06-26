@@ -1,0 +1,25 @@
+// vars
+$text: #252525;
+$white: #ffffff;
+$black: #000;
+$blue: #02A8F4;
+$delay: 2;
+$length: 47;
+
+// layout
+@import "_misc/font";
+@import "_misc/mixins";
+@import "_misc/normalize";
+@import "_misc/setting";
+
+// components
+@import "../components/preloader/preloader";
+
+// style
+@import "../pages/layout/_layout";
+@import "../pages/layout/_header";
+@import "../pages/index";
+@import "../pages/layout/_footer";
+
+// media queris
+@import "../css/adaptive/adaptive"

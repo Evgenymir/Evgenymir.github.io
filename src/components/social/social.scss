@@ -1,0 +1,44 @@
+.b-social {}
+
+.b-social__link {
+	@include inlineBlock();
+	text-decoration: none;
+	margin-right: 13px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	.b-social__svg {
+		fill: #565656;
+		transition: fill ease 0.3s;
+	}
+
+	&:hover {
+		.b-social__svg {
+			fill: $red;
+		}
+	}
+}
+
+@include tablets {
+	.b-social__link {
+		margin-right: 10px;
+		
+		.b-social__svg {
+			width: 27px;
+			height: 27px;
+		}
+	}
+}
+
+@include phone {
+	.b-social__link {
+		margin-right: 7px;
+		
+		.b-social__svg {
+			width: 22px;
+			height: 22px;
+		}
+	}
+}

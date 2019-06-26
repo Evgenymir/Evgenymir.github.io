@@ -1,0 +1,89 @@
+/*===========================
+	Прелоадер
+=============================*/
+.b-preloader {
+	position: fixed;
+	top: 0; right: 0;
+	bottom: 0; left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	visibility: visible;
+	transition: all ease 1s;
+	overflow: hidden;
+	margin: auto;
+
+	&:before,
+	&:after {
+		content: "";
+		width: 100%;
+		height: 50%;
+		background-color: $black;
+		position: absolute;
+		left: 0;
+		transition: all ease 0.5s;
+	}
+
+	&:before {
+		top: 0;
+	}
+
+	&:after {
+		bottom: 0;
+	}
+
+	&.done {
+		visibility: hidden;
+		opacity: 0;
+
+		&:before,
+		&:after {
+			height: 0;
+		}
+
+		.b-preloader__logo,
+		.b-preloader__item {
+			visibility: hidden;
+			opacity: 0;
+		}
+	}
+}
+	.b-preloader__logo {
+		display: block;
+		@include satisfy();
+		font-size: rem(46px);
+		color: $blue;
+		line-height: 1;
+		text-decoration: none;
+		transition: color ease 0.3s;
+		padding: 10px;
+		position: absolute;
+		top: 30%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.b-preloader__item {
+		width: 100vw;
+		height: 5px;
+		background-color: $white;
+		position: absolute;
+		top: 50%;
+		margin-top: -3px;
+	}
+
+	.b-preloader__item-line {
+		width: 100%;
+		height: 100%;
+		background-color: $blue;
+		animation: runLine 2.5s infinite linear;
+	}
+
+@keyframes runLine {
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(100%);
+	}
+}

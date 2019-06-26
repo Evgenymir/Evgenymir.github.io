@@ -1,0 +1,27 @@
+.b-logo {
+	@include inlineBlock();
+	text-decoration: none;
+	color: inherit;
+
+	&:hover {
+		.b-logo__img {
+			transform: rotate(-30deg);
+		}
+	}
+}
+
+.b-logo__img {
+	@include inlineBlock(middle);
+	width: 59px;
+	height: 68px;
+	margin-right: 13px;
+	transition: transform ease 0.3s;
+}
+
+.b-logo__text {
+	@include inlineBlock(middle);
+	@include gotham();
+	font-size: rem(24px);
+	color: $white;
+	line-height: 1;
+}
