@@ -1,0 +1,121 @@
+.b-tabSort {
+	@include reset-list();
+	text-align: center;
+	margin-bottom: 70px;
+}
+
+.b-tabSort__item {
+	@include inlineBlock(middle);
+	margin: 0 5px;
+
+	&.active {
+		.b-tabSort__link {
+			color: $white;
+			background-color: $blue;
+		}
+	}
+}
+
+.b-tabSort__link {
+	font-size: rem(18px);
+	color: $blue;
+	line-height: 1;
+	text-decoration: none;
+	border: 2px solid $blue;
+	border-radius: 30px;
+	padding: 5px 30px;
+	transition: color, background-color, ease 0.3s;
+
+	&:hover {
+		color: $white;
+		background-color: $blue;
+	}
+}
+
+// Стили для контента
+
+.b-tabSort-content {
+	@include flex(center);
+	margin-left: -0.5%;
+}
+
+.b-tabSort-content__item {
+	@include flex(center);
+	@include bg();
+	position: relative;
+	align-items: center;
+	width: 32.8%;
+	height: 240px;
+	text-decoration: none;
+	margin-left: 0.5%;
+	margin-bottom: 0.5%;
+	overflow: hidden;
+
+	&:before {
+		content: "";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0; right: 0;
+		bottom: 0; left: 0;
+		background-color: rgba(0,0,0,0.8);
+		visibility: hidden;
+		opacity: 0;
+		transition: all ease 0.8s;
+	}
+
+	&:hover {
+		&:before {
+			visibility: visible;
+			opacity: 1;
+		}
+
+		.b-tabSort-content__site,
+		.b-tabSort-content__block {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+}
+
+.b-tabSort-content__site {
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	@include ptSans(bold);
+	font-size: rem(12px);
+	color: $white;
+	text-transform: uppercase;
+	visibility: hidden;
+	opacity: 0;
+	transition: all ease 0.8s;
+}
+
+.b-tabSort-content__block {
+	position: relative;
+	width: 100%;
+	color: $white;
+	text-align: center;
+	visibility: hidden;
+	opacity: 0;
+	transition: all ease 0.8s;
+}
+	
+.b-tabSort-content__block-title  {
+	display: block;
+	width: 100%;
+	@include ptSans(bold);
+	font-size: rem(18px);
+	color: $white;
+	line-height: 1;
+	text-align: center;
+	margin-bottom: 2%;
+}
+
+.b-tabSort-content__block-line {
+	@include inlineBlock();
+	width: 100px;
+	height: 3px;
+	background-color: $blue;
+}

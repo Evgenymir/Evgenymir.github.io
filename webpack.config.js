@@ -3,7 +3,7 @@ const webpack = require('webpack');
 
 const config = {
 	entry: {
-		app: './src/js/app.js'
+		app: ['babel-polyfill', './src/js/app.js']
 	},
 	output: {
 		filename: '[name].js'
@@ -22,9 +22,9 @@ const config = {
             }
   		}]
 	},
-	externals: {
-		jquery: 'jQuery'
-	},
+	// externals: {
+	// 	jquery: 'jQuery'
+	// },
 	plugins: [
 		// new UglifyJSPlugin({
 		// 	sourceMap: true

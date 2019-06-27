@@ -13,6 +13,7 @@
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "babel-loader": "^8.0.6",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.26.7",
     "del": "^4.1.1",
@@ -31,6 +32,9 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-tinypng": "^1.0.2",
     "gulp-uglify": "^3.0.2",
+    "jquery": "^3.4.1",
+    "jquery-inview": "^1.1.2",
+    "mixitup": "^3.3.1",
     "webpack": "^4.35.0",
     "webpack-stream": "^5.2.1"
   }

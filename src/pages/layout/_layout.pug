@@ -23,7 +23,7 @@ html(lang="ru-RU")
 		
 		// Шапка
 		
-		header.l-header
+		header.l-header.j-header
 			include _header.pug
 
 		// Контент
@@ -31,9 +31,16 @@ html(lang="ru-RU")
 			block content
 
 		// Подвал
-		footer.l-footer
+		footer.l-footer.b-footer.b-section
 			include _footer.pug
+
+		// Мобильное меню
+		include ../../components/mobileMenuLanding/mobileMenuLanding
+
+		// Спрайт svg
+		include _sprite.html
 					
 		// script
 		block scripts
+			script(src="https://api-maps.yandex.ru/2.1.64/?lang=ru_RU")
 			script(src="js/app.min.js")

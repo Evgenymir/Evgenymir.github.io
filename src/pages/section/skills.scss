@@ -1,0 +1,11 @@
+.b-skills {
+	@include bg();
+	background-image: url(../img/skills.jpg);
+	background-attachment: fixed;
+	position: relative;
+	color: $white;
+}
+
+.b-skills__title {
+	color: $white;
+}

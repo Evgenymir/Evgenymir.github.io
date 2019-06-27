@@ -14,11 +14,25 @@ $length: 47;
 
 // components
 @import "../components/preloader/preloader";
+@import "../components/logo/logo";
+@import "../components/menuLanding/menuLanding";
+@import "../components/burger/burger";
+@import "../components/anchor/anchor";
+@import "../components/progressBarRadial/progressBarRadial";
+@import "../components/tabSort/tabSort";
+@import "../components/map/map";
+@import "../components/buttonTop/buttonTop";
+@import "../components/mobileMenuLanding/mobileMenuLanding";
 
 // style
 @import "../pages/layout/_layout";
 @import "../pages/layout/_header";
 @import "../pages/index";
+@import "../pages/section/mainScreen";
+@import "../pages/section/about";
+@import "../pages/section/skills";
+@import "../pages/section/works";
+@import "../pages/section/contact";
 @import "../pages/layout/_footer";
 
 // media queris

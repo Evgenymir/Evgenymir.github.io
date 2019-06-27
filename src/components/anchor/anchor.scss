@@ -1,0 +1,26 @@
+.b-anchor {
+	@include inlineBlock();
+	position: relative;
+	font-size: rem(14px);
+	color: #fff;
+	text-decoration: none;
+	padding-bottom: 20px;
+	cursor: pointer;
+	opacity: 0;
+
+	&:before {
+		content: "";
+		width: 10px;
+		height: 10px;
+		border: 2px solid #fff;
+		border-top: 0;
+		border-left: 0;
+		border-radius: 0 0 3px 0;
+		position: absolute;
+		top: 50%;
+		left: 0; right: 0;
+		margin: auto;
+		transform: rotate(45deg);
+		animation: scrollDown 2s infinite ease-in-out;
+	}
+}

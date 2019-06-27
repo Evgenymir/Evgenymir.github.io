@@ -1,0 +1,137 @@
+.b-progress__list {
+	@include flex(space-around);
+	padding: 40px 0;
+}
+
+.b-progress__item {
+	@include inlineBlock(middle);
+}
+
+.b-progress__item-wrap {
+	position: relative;
+	height: 110px;
+	margin-bottom: 20px;
+}
+
+.b-progress__item-timer {
+	height: 20px;
+	@include ptSans(bold);
+	font-size: rem(22px);
+	line-height: 1;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 0; right: 0;
+	margin-top: -10px;
+}
+
+.b-progress__item-circle {
+	width: 110px;
+	height: 110px;
+	fill: none;
+	stroke-width: 15;
+}
+
+.b-progress__item-circle-first {
+    stroke: rgba(#dfdcd5, 0.1);
+}
+
+.b-progress__item-circle-second {
+    stroke: $blue;
+    stroke-dasharray: .001 282.6;
+    -webkit-transition: all 1s;
+    transition: all 4s;
+}
+
+/* настройка процентов окружности */
+
+.b-progress__item.active {
+	.b-progress__item-circle-0 {
+	   stroke-dasharray: .001 282.6;
+	}
+
+	.b-progress__item-circle-10 {
+	   stroke-dasharray: 28.26 282.6;
+	}
+
+	.b-progress__item-circle-15 {
+	   stroke-dasharray: 42.39 282.6;
+	}
+
+	.b-progress__item-circle-20 {
+	   stroke-dasharray: 56.52 282.6;
+	}
+
+	.b-progress__item-circle-25 {
+	   stroke-dasharray: 70.65 282.6;
+	}
+
+	.b-progress__item-circle-30 {
+	   stroke-dasharray: 84.78 282.6;
+	}
+
+	.b-progress__item-circle-35 {
+	   stroke-dasharray: 98.91 282.6;
+	}
+
+	.b-progress__item-circle-40 {
+	   stroke-dasharray: 113.04 282.6;
+	}
+
+	.b-progress__item-circle-45 {
+	   stroke-dasharray: 127.17 282.6;
+	}
+
+	.b-progress__item-circle-50 {
+	   stroke-dasharray: 141.3 282.6;
+	}
+
+	.b-progress__item-circle-55 {
+	   stroke-dasharray: 155.43 282.6;
+	}
+
+	.b-progress__item-circle-60 {
+	  stroke-dashoffset: 282.6;
+	  stroke-dasharray: 169.56 ;
+	}
+
+	.b-progress__item-circle-65 {
+	   stroke-dasharray: 183.69 282.6;
+	}
+
+	.b-progress__item-circle-70 {
+	   stroke-dasharray: 197.82 282.6;
+	}
+
+	.b-progress__item-circle-75 {
+	   stroke-dasharray: 211.95 282.6;
+	}
+
+	.b-progress__item-circle-80 {
+	   stroke-dasharray: 226.08 282.6;
+	}
+
+	.b-progress__item-circle-85 {
+	   stroke-dasharray: 240.21 282.6;
+	}
+
+	.b-progress__item-circle-90 {
+	   stroke-dasharray: 254.34 282.6;
+	}
+
+	.b-progress__item-circle-95 {
+	   stroke-dasharray: 268.47 282.6;
+	}
+
+	.b-progress__item-circle-100 {
+	   stroke-dasharray: 282.6 282.6;
+	}
+}
+
+/* закончилась настройка процентов окружности */
+
+.b-progress__item-text {
+	font-size: rem(18px);
+	text-transform: uppercase;
+	text-align: center;
+}

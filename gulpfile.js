@@ -24,8 +24,9 @@ $.gulp.task('default', $.gulp.series(
 		'pug',
 		'sass:dev',
 		'css:dev',
-		'img',
 		'script:dev',
+		'scriptLibs',
+		'img',
 		'fonts'
 	),
 	$.gulp.parallel(
@@ -41,8 +42,9 @@ $.gulp.task('build', $.gulp.series(
 		'pug',
 		'sass:build',
 		'css:dev',
-		'img',
 		'script:build',
+		'scriptLibs',
+		'img',
 		'fonts'
 	),
 	$.gulp.parallel(

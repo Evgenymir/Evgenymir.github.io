@@ -1,0 +1,16 @@
+//- Миксин меню
+mixin menu(items)
+	nav.b-menu
+		ul.b-menu__list.j-menu__list
+			each item in items
+				li.b-menu__item
+					a.b-menu__link(href=item.href data-hover=item.title class= {active : currentURL == item.href})
+						span #{item.title}
+
+//- Добавляем меню
++menu([
+	{'title': 'Обо мне', 'href': '#b-about'},
+	{'title': 'Навыки', 'href': '#b-skills'},
+	{'title': 'Мои работы', 'href': '#b-works'},
+	{'title': 'Контакты', 'href': '#b-contact'}
+])
