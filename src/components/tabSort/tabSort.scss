@@ -2,6 +2,18 @@
 	@include reset-list();
 	text-align: center;
 	margin-bottom: 70px;
+
+	@include laptop {
+		margin-bottom: 50px;
+	}
+
+	@include tablets {
+		margin-bottom: 30px;
+	}
+
+	@include phone {
+		display: none;
+	}
 }
 
 .b-tabSort__item {
@@ -13,6 +25,11 @@
 			color: $white;
 			background-color: $blue;
 		}
+	}
+
+	@include tablets {
+		width: 45%;
+		margin-bottom: 10px;
 	}
 }
 
@@ -30,6 +47,14 @@
 		color: $white;
 		background-color: $blue;
 	}
+
+	@include laptop {
+		padding: 5px 15px;
+	}
+
+	@include tablets {
+		display: block;
+	}
 }
 
 // Стили для контента
@@ -37,6 +62,11 @@
 .b-tabSort-content {
 	@include flex(center);
 	margin-left: -0.5%;
+
+	@include phone {
+		display: block;
+		margin-left: 0;
+	}
 }
 
 .b-tabSort-content__item {
@@ -76,6 +106,26 @@
 			opacity: 1;
 		}
 	}
+
+	@include desctop {
+		height: 180px;
+	}
+
+	@include laptop {
+		width: 49.5%;
+	    height: 200px;
+	}
+
+	@include tablets {
+		height: 130px;
+	}
+
+	@include phone {
+		width: 100%;
+		height: 50vw;
+		margin-left: 0;
+		margin-bottom: 1%;
+	}
 }
 
 .b-tabSort-content__site {
@@ -111,6 +161,10 @@
 	line-height: 1;
 	text-align: center;
 	margin-bottom: 2%;
+
+	@include tablets {
+		font-size: rem(16px);
+	}
 }
 
 .b-tabSort-content__block-line {

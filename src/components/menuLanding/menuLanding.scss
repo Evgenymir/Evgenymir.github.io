@@ -1,4 +1,8 @@
-.b-menu {}
+.b-menu {
+	@include laptop {
+		display: none;
+	}
+}
 
 .b-menu__list {
 	@include reset-list();

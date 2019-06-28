@@ -15,6 +15,17 @@
 	margin: 0;
 	margin-bottom: 20vh;
 	opacity: 0;
+
+	@include phone {
+		max-width: 190px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 15vh;
+	}
+
+	@media screen and(max-width:360px) {
+		margin-bottom: 9vh;
+	}
 }
 
 .b-mainScreen__name {
@@ -31,6 +42,26 @@
 		display: inline-block;
 		opacity: 0;
 		padding: 0 10px;
+
+		@media screen and(max-width:380px) {
+			padding: 0 7px 0 0;
+
+			&:last-child {
+				padding: 0;
+			}
+		}
+	}
+
+	@include tablets {
+		font-size: rem(42px);
+	}
+
+	@include phone {
+		font-size: rem(32px);
+	}
+
+	@media screen and(max-width:380px) {
+		font-size: rem(26px);
 	}
 }
 
@@ -47,6 +78,21 @@
 		position: relative;
 		@include inlineBlock();
 		opacity: 0;
+	}
+
+	@include phone {
+		max-width: 262px;
+		height: auto;
+		line-height: 1.4;
+		margin-left: auto;
+		margin-right: auto;
+
+		span {
+			&:nth-child(29),
+			&:nth-child(30) {
+				display: none;
+			}
+		}
 	}
 }
 
@@ -106,6 +152,11 @@
 		animation-delay: 1s;
 		animation-duration: 1s;
 		animation-fill-mode: both;
+
+		@include phone {
+			animation-name: none;
+			opacity: 1;
+		}
 	}
 
 	.b-mainScreen__name {
@@ -116,11 +167,21 @@
 			&:first-child {
 				animation-name: slideUp;
 				animation-delay: 1.5s;
+
+				@include phone {
+					animation-name: none;
+					opacity: 1;
+				}
 			}
 
 			&:last-child {
 				animation-name: slideUp;
 				animation-delay: 1.8s;
+
+				@include phone {
+					animation-name: none;
+					opacity: 1;
+				}
 			}
 		}
 	}
@@ -131,6 +192,11 @@
 			animation-delay: $delay;
 			animation-timing-function: ease;
 			animation-fill-mode: both;
+
+			@include phone {
+				animation-name: none;
+				opacity: 1;
+			}
 		}
 	}
 	.b-anchor {
@@ -139,6 +205,11 @@
 		animation-duration: 1s;
 		animation-timing-function: ease;
 		animation-fill-mode: both;
+
+		@include phone {
+			animation-name: none;
+			opacity: 1;
+		}
 	}
 }
 

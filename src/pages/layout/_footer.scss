@@ -1,3 +1,10 @@
 .b-footer__block {
 	position: relative;
 }
+
+.b-footer__text {
+	
+	@include tablets {
+		width: 80%;
+	}
+}

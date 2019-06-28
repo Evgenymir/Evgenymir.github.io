@@ -6,6 +6,7 @@ global.$ = {
 		task: require('./gulp/path/tasks.js')
 	},
 	gulp: require('gulp'),
+	gcmq: require('gulp-group-css-media-queries'),
 	webpack: require('webpack'),
 	webpackStream: require('webpack-stream'),
 	del: require('del'),
@@ -27,6 +28,7 @@ $.gulp.task('default', $.gulp.series(
 		'script:dev',
 		'scriptLibs',
 		'img',
+		'favicons',
 		'fonts'
 	),
 	$.gulp.parallel(
@@ -45,6 +47,7 @@ $.gulp.task('build', $.gulp.series(
 		'script:build',
 		'scriptLibs',
 		'img',
+		'favicons',
 		'fonts'
 	),
 	$.gulp.parallel(

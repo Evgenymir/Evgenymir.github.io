@@ -8,4 +8,21 @@
 	margin-top: -200px;
 	margin-bottom: 50px;
 	overflow: hidden;
+
+	@include desctop {
+		max-width: 870px;
+		height: 250px;
+	}
+
+	@include tablets {
+		height: 200px;
+		margin-top: 0;
+	}
+
+	@include phone {
+		display: none;
+		width: 0;
+		height: 0;
+		visibility: hidden;
+	}
 }

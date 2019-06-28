@@ -11,6 +11,10 @@
 			}
 		}
 	}
+
+	@include laptop {
+		@include inlineBlock(middle);
+	}
 }
 
 .b-burger__line {
@@ -21,5 +25,9 @@
 	
 	&:not(:last-child) {
 		margin-bottom: 5px;
+	}
+
+	@include phone {
+		height: 3px;
 	}
 }

@@ -71,12 +71,6 @@ window.onload = () => {
 		TabSort();
 	}
 
-	/* Подключаем карту Яндекс */
-	const mapItem = document.querySelector('.j-map');
-	if(mapItem) {
-		Map();
-	}
-
 	/* Подключаем кнопку на верх */
 	const buttonTopItem = document.querySelector('.j-buttonTop');
 	if(buttonTopItem) {
@@ -87,6 +81,12 @@ window.onload = () => {
 	const mobileMenuItem = document.querySelector('.j-mobileMenu');
 	if(mobileMenuItem) {
 		MobileMenu();
+	}
+
+	/* Подключаем карту Яндекс */
+	const mapItem = document.querySelector('.j-map');
+	if(mapItem) {
+		Map();
 	}
 
 }; // => Закончился window.onload

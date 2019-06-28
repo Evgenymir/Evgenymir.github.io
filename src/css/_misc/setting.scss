@@ -8,6 +8,10 @@ $containerMinWidth: 310px;
 
 html {
 	font-size: 16px;
+
+	@include tablets {
+		font-size: 14px;
+	}
 }
 
 body, html {
@@ -75,12 +79,32 @@ img {max-width: 100%;}
 	min-width: $containerMinWidth;
 	margin: 0 auto;
 	padding: 0 10px;
+
+	@include desctop {
+		max-width: 992px;
+	}
+
+	@include laptop {
+		max-width: 768px;
+	}
+
+	@include tablets {
+		max-width: 480px;
+	}
+
+	@include phone {
+		max-width: 100%;
+	}
 }
 
 .b-section {
 	min-width: 310px;
 	background-color: #fff;
 	padding: 80px 0;
+
+	@include tablets {
+		padding: 40px 0;
+	}
 }
 
 .b-title {
@@ -108,5 +132,17 @@ img {max-width: 100%;}
 		font-size: inherit;
 		margin: 0;
 		font-weight: normal;
+	}
+
+	@include tablets {
+		font-size: rem(30px);
+		padding-bottom: 10px;
+		margin-bottom: 30px;
+	}
+
+	@include phone {
+		font-size: rem(24px);
+		padding-bottom: 10px;
+		margin-bottom: 30px;
 	}
 }

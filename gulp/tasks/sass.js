@@ -12,6 +12,7 @@ module.exports = function() {
 				overrideBrowserslist: ['last 3 versions'],
 				cascade: false
 			}))
+			.pipe($.gcmq())
 			.pipe($.gp.cssbeautify())
 			.pipe($.gp.sourcemaps.write())
 			.pipe($.gulp.dest('./build/css'))
@@ -27,6 +28,7 @@ module.exports = function() {
 				overrideBrowserslist: ['last 3 versions'],
 				cascade: false
 			}))
+			.pipe($.gcmq())
 			.pipe($.gp.cssbeautify())
 			.pipe($.gp.csso())
 			.pipe($.gulp.dest('./build/css'))

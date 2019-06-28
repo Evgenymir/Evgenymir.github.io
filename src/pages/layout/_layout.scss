@@ -5,17 +5,21 @@
 	padding: 5px 0;
 	z-index: 10;
 }
+
 .j-header-scroll {
 	background: rgba(0,0,0,0.7);
+
 	.b-logo {
 		border-width: 1px;
 		a {
 			font-size: rem(18px);
 		}
 	}
+
 	.b-menu__link {
 		padding: 10px;
 	}
+	
 	.b-burger__line {
 		height: 3px;
 	}
@@ -28,4 +32,12 @@
 	text-align: center;
 	background-color: #363837;
 	padding-bottom: 50px;
+
+	@include tablets {
+		text-align: left;
+	}
+
+	@include phone {
+		padding: 30px 0;
+	}
 }

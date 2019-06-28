@@ -17,8 +17,19 @@
 	@include satisfy();
 	font-size: rem(26px);
 	color: #fff;
-	line-height: 1;
+	line-height: 26px;
 	text-decoration: none;
 	transition: color ease 0.3s;
 	padding: 10px;
+
+	@include tablets {
+		font-size: rem(20px);
+		line-height: 20px;
+		padding: 7px 20px;
+	}
+
+	@include phone {
+		font-size: rem(18px);
+		line-height: 18px;
+	}
 }

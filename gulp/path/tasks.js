@@ -6,6 +6,7 @@ module.exports = [
 	'./gulp/tasks/sass.js',
 	'./gulp/tasks/css.js',
 	'./gulp/tasks/img.js',
+	'./gulp/tasks/favicons.js',
 	'./gulp/tasks/script.js',
 	'./gulp/tasks/scriptLibs.js',
 	'./gulp/tasks/fonts.js',

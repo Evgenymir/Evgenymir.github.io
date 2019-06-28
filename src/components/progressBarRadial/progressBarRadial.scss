@@ -1,16 +1,36 @@
 .b-progress__list {
 	@include flex(space-around);
 	padding: 40px 0;
+
+	@include tablets {
+		padding: 0;
+	}
+
+	@include phone {
+		max-width: 300px;
+		flex-wrap: wrap;
+		margin: auto;
+	}
 }
 
 .b-progress__item {
 	@include inlineBlock(middle);
+
+	@include phone {
+		width: 50%;
+		margin-bottom: 15px;
+	}
 }
 
 .b-progress__item-wrap {
 	position: relative;
 	height: 110px;
 	margin-bottom: 20px;
+
+	@include phone {
+		width: 110px;
+		margin: 0 auto;
+	}
 }
 
 .b-progress__item-timer {
@@ -134,4 +154,9 @@
 	font-size: rem(18px);
 	text-transform: uppercase;
 	text-align: center;
+
+	@include phone {
+		width: 110px;
+		margin: 0 auto;
+	}
 }

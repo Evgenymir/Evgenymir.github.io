@@ -1,9 +1,22 @@
 .b-about__block {
 	@include flex();
+
+	@include tablets {
+		display: block;
+	}
 }
 
 .b-about__left {
 	width: 38%;
+
+	@include laptop {
+		width: 30%;
+	}
+
+	@include tablets {
+		width: 100%;
+		padding-left: 0;
+	}
 }
 
 .b-about__img {
@@ -17,11 +30,24 @@
 		width: 100%;
 		margin-bottom: -5px;
 	}
+
+	@include tablets {
+		margin-bottom: 15px;
+	}
 }
 
 .b-about__right {
 	width: 62%;
 	padding-left: 3%;
+
+	@include laptop {
+		width: 70%;
+	}
+
+	@include tablets {
+		width: 100%;
+		padding-left: 0;
+	}
 }
 .b-about__text {
 	font-size: rem(18px);
@@ -43,5 +69,9 @@
 		span {
 			color: $text;
 		}
+	}
+
+	@include phone {
+		text-align: justify;
 	}
 }
