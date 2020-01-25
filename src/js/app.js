@@ -1,10 +1,11 @@
+import ProgressBarLine from '../components/progressBarLine/progressBarLine.js';
 import Preloader from '../components/preloader/preloader.js';
 import Header from '../pages/layout/_header.js';
 import Logo from '../components/logo/logo.js';
 import Menu from '../components/menuLanding/menuLanding.js';
 import Burger from '../components/burger/burger.js';
 import Anchor from '../components/anchor/anchor.js';
-import ProgressBar from '../components/progressBarRadial/progressBarRadial.js';
+// import ProgressBar from '../components/progressBarRadial/progressBarRadial.js';
 import TabSort from '../components/tabSort/tabSort.js';
 import Map from '../components/map/map.js';
 import ButtonTop from '../components/buttonTop/buttonTop.js';
@@ -12,6 +13,12 @@ import MobileMenu from '../components/mobileMenuLanding/mobileMenuLanding.js';
 
 
 window.onload = () => {
+
+	/* Подключаем прогресс бар страницы */
+	const progressBarLineItem = document.querySelector('.j-progress-bar');
+	if(progressBarLineItem) {
+		ProgressBarLine();
+	}
 
 	/* Подключаем прелоадер */
 	const preloaderItem = document.querySelector('.j-preloader');
@@ -59,10 +66,10 @@ window.onload = () => {
 	/* Добавляем класс в навыках при его видимости 
 	   и инициализируем счетчик */
 
-	const ProgressBarItem = document.querySelector('.j-progress__list');
-	if(ProgressBarItem) {
-		ProgressBar();
-	}
+	// const ProgressBarItem = document.querySelector('.j-progress__list');
+	// if(ProgressBarItem) {
+	// 	ProgressBar();
+	// }
 
 	/* Подключаем табы с сортировкий контента */
 

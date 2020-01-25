@@ -1,9 +1,12 @@
 //- Миксин кнопок
+-
 mixin tabSort(items)
 	ul.b-tabSort.j-tabSort
 		each item in items
 			li.b-tabSort__item.j-tabSort__item(class=item.class)
 				a.b-tabSort__link.j-tabSort__link(href="#" data-filter=item.filter) #{item.text}
+-;
+-
 //- Миксин контента
 mixin contentSort(items)
 	.b-tabSort-content.j-tabSort-content-sort
@@ -13,6 +16,7 @@ mixin contentSort(items)
 				span.b-tabSort-content__block
 					span.b-tabSort-content__block-title #{item.title}
 					span.b-tabSort-content__block-line
+-;
 
 //- Табы
 +tabSort([
@@ -37,6 +41,20 @@ mixin contentSort(items)
 
 //- Контент
 +contentSort([
+	{
+		'href' : 'https://www.spbsez.ru/',
+		'style': 'background-image:url("img/works/oez.jpg");',
+		'class': 'category-3',
+		'name' : 'Сайт компании',
+		'title': 'Особая экономическая зона «Санкт-Петербург»'
+	},
+	{
+		'href' : 'libs/crpp/index.html',
+		'style': 'background-image:url("img/works/crpp.jpg");',
+		'class': 'category-3',
+		'name' : 'Сайт компании',
+		'title': 'Единый центр предпринимательства'
+	},
 	{
 		'href' : 'libs/irline/index.html',
 		'style': 'background-image:url("img/works/irline.jpg");',

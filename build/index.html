@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="./css/main.css">
     </head>
     <body>
+        <!--Прогресс бар-->
+        <div class="b-progress-bar j-progress-bar"></div>
         <!-- Прелоадер-->
         <div class="b-preloader j-preloader">
             <div class="b-preloader__logo">Bespalov</div>
@@ -31,7 +33,6 @@
                     <nav class="b-menu">
                         <ul class="b-menu__list j-menu__list">
                             <li class="b-menu__item"><a class="b-menu__link" href="#b-about" data-hover="Обо мне"><span>Обо мне</span></a></li>
-                            <li class="b-menu__item"><a class="b-menu__link" href="#b-skills" data-hover="Навыки"><span>Навыки</span></a></li>
                             <li class="b-menu__item"><a class="b-menu__link" href="#b-works" data-hover="Мои работы"><span>Мои работы</span></a></li>
                             <li class="b-menu__item"><a class="b-menu__link" href="#b-contact" data-hover="Контакты"><span>Контакты</span></a></li>
                         </ul>
@@ -71,17 +72,17 @@
                         </div>
                         <div class="b-about__right">
                             <div class="b-about__text">
-                                <p>Здравствуйте, меня зовут Евгений. Занимаюсь разработкой современных, функциональных веб-сайтов и интерфейсов с нуля. Делаю адаптивную верстку без фреймворка Bootstrap, таким образом Ваш сайт будет отлично выглядеть на всех устройствах.</p>
+                                <p>Здравствуйте, меня зовут Евгений. Занимаюсь разработкой современных, функциональных веб-сайтов и интерфейсов с нуля. Делаю адаптивную верстку без фреймворка Bootstrap.</p>
                                 <p>В работе использую такие технологии как:</p>
                                 <ul>
                                     <li> <span>Html / html5</span></li>
                                     <li><span>Css / css3</span></li>
                                     <li><span>Препроцессор Sass (scss)</span></li>
                                     <li><span>Шаблонизатор Pug</span></li>
-                                    <li><span>Flex</span></li>
-                                    <li><span>Animation</span></li>
+                                    <li><span>Flex / Grid</span></li>
+                                    <li><span>Animation / SVG</span></li>
                                     <li><span>Javascript / jQuery</span></li>
-                                    <li><span>Gulp</span></li>
+                                    <li><span>Gulp / Webpack / Babel</span></li>
                                 </ul>
                                 <p>Любой начатый проект верстаю кроссбраузерно, валидно, на выходе получается чистый и легко поддерживаемый код. Постоянно совершенствую свой профессиональный уровень.</p>
                             </div>
@@ -90,55 +91,6 @@
                 </div>
             </section>
             <!-- Навыки-->
-            <section class="b-skills b-section" id="b-skills">
-                <div class="b-container">
-                    <div class="b-skills__title b-title">
-                        <h2>Навыки</h2>
-                    </div>
-                    <div class="b-progress__list j-progress__list">
-                        <div class="b-progress__item j-progress__item">
-                            <div class="b-progress__item-wrap">
-                                <div class="b-progress__item-timer"><span class="b-progress__item-timer-number j-progress-number">85</span><span>%</span></div>
-                                <svg class="b-progress__item-circle" width="110" height="110">
-                                    <circle class="b-progress__item-circle-first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                                    <circle class="b-progress__item-circle-second b-progress__item-circle-85" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                                </svg>
-                            </div>
-                            <div class="b-progress__item-text">html / html5</div>
-                        </div>
-                        <div class="b-progress__item j-progress__item">
-                            <div class="b-progress__item-wrap">
-                                <div class="b-progress__item-timer"><span class="b-progress__item-timer-number j-progress-number">80</span><span>%</span></div>
-                                <svg class="b-progress__item-circle" width="110" height="110">
-                                    <circle class="b-progress__item-circle-first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                                    <circle class="b-progress__item-circle-second b-progress__item-circle-80" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                                </svg>
-                            </div>
-                            <div class="b-progress__item-text">CSS / CSS3</div>
-                        </div>
-                        <div class="b-progress__item j-progress__item">
-                            <div class="b-progress__item-wrap">
-                                <div class="b-progress__item-timer"><span class="b-progress__item-timer-number j-progress-number">20</span><span>%</span></div>
-                                <svg class="b-progress__item-circle" width="110" height="110">
-                                    <circle class="b-progress__item-circle-first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                                    <circle class="b-progress__item-circle-second b-progress__item-circle-20" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                                </svg>
-                            </div>
-                            <div class="b-progress__item-text">javascript</div>
-                        </div>
-                        <div class="b-progress__item j-progress__item">
-                            <div class="b-progress__item-wrap">
-                                <div class="b-progress__item-timer"><span class="b-progress__item-timer-number j-progress-number">50</span><span>%</span></div>
-                                <svg class="b-progress__item-circle" width="110" height="110">
-                                    <circle class="b-progress__item-circle-first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                                    <circle class="b-progress__item-circle-second b-progress__item-circle-50" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                                </svg>
-                            </div>
-                            <div class="b-progress__item-text">jQuery</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <!-- Работы-->
             <section class="b-works b-section" id="b-works">
                 <div class="b-container">
@@ -151,7 +103,7 @@
                         <li class="b-tabSort__item j-tabSort__item"><a class="b-tabSort__link j-tabSort__link" href="#" data-filter=".category-2">Интернет-магазин</a></li>
                         <li class="b-tabSort__item j-tabSort__item"><a class="b-tabSort__link j-tabSort__link" href="#" data-filter=".category-3">Сайт-компании</a></li>
                     </ul>
-                    <div class="b-tabSort-content j-tabSort-content-sort"><a class="b-tabSort-content__item mix category-3" href="libs/irline/index.html" target="_blank" style="background-image:url(&quot;img/works/irline.jpg&quot;);"><span class="b-tabSort-content__site">Сайт компании</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Перегородки Ирлайн</span><span class="b-tabSort-content__block-line"></span></span></a><a class="b-tabSort-content__item mix category-1" href="libs/proweb/index.html" target="_blank" style="background-image:url(&quot;img/works/proweb.jpg&quot;);"><span class="b-tabSort-content__site">Одностраничный сайт</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Маркетинговая компания PROWEB</span><span class="b-tabSort-content__block-line"></span></span></a><a class="b-tabSort-content__item mix category-3" href="libs/nordline/index.html" target="_blank" style="background-image:url(&quot;img/works/nordline.jpg&quot;);"><span class="b-tabSort-content__site">Сайт компании</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Экспедиторская компания</span><span class="b-tabSort-content__block-line"></span></span></a><a class="b-tabSort-content__item mix category-3" href="libs/happyChif/index.html" target="_blank" style="background-image:url(&quot;img/works/happyChif.jpg&quot;);"><span class="b-tabSort-content__site">Сайт компании</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Кухонное оборудование</span><span class="b-tabSort-content__block-line"></span></span></a><a class="b-tabSort-content__item mix category-1" href="libs/mebell/index.html" target="_blank" style="background-image:url(&quot;img/works/pallet.jpg&quot;);"><span class="b-tabSort-content__site">Одностраничный сайт</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Мебель из паллет</span><span class="b-tabSort-content__block-line"></span></span></a><a class="b-tabSort-content__item mix category-1" href="libs/azure/index.html" target="_blank" style="background-image:url(&quot;img/works/azure.jpg&quot;);"><span class="b-tabSort-content__site">Одностраничный сайт</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Апартаменты в Манхеттене</span><span class="b-tabSort-content__block-line"></span></span></a><a class="b-tabSort-content__item mix category-3" href="libs/cruiseEurope/index.html" target="_blank" style="background-image:url(&quot;img/works/cruise.jpg&quot;);"><span class="b-tabSort-content__site">Сайт компании</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Конференция 2018</span><span class="b-tabSort-content__block-line"></span></span></a><a class="b-tabSort-content__item mix category-2" href="libs/chocolate/index.html" target="_blank" style="background-image:url(&quot;img/works/amazing.jpg&quot;);"><span class="b-tabSort-content__site">Интернет магазин</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Интернет магазин шоколада</span><span class="b-tabSort-content__block-line"></span></span></a><a class="b-tabSort-content__item mix category-3" href="libs/zamerzaem/index.html" target="_blank" style="background-image:url(&quot;img/works/zamerzaem.jpg&quot;);"><span class="b-tabSort-content__site">Сайт компании</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Портал замерзаем</span><span class="b-tabSort-content__block-line"></span></span></a><a class="b-tabSort-content__item mix category-3" href="libs/ann/index.html" target="_blank" style="background-image:url(&quot;img/works/ann.jpg&quot;);"><span class="b-tabSort-content__site">Сайт компании</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Гостиница Аннушка</span><span class="b-tabSort-content__block-line"></span></span></a><a class="b-tabSort-content__item mix category-3" href="libs/greenpass/index.html" target="_blank" style="background-image:url(&quot;img/works/greenpass.jpg&quot;);"><span class="b-tabSort-content__site">Сайт компании</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Транспортировка грузов</span><span class="b-tabSort-content__block-line"></span></span></a><a class="b-tabSort-content__item mix category-3" href="libs/tour/index.html" target="_blank" style="background-image:url(&quot;img/works/rusTour.jpg&quot;);"><span class="b-tabSort-content__site">Сайт компании</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Туроператор Русь-Тур</span><span class="b-tabSort-content__block-line"></span></span></a><a class="b-tabSort-content__item mix category-1" href="libs/nedv/index.html" target="_blank" style="background-image:url(&quot;img/works/nedv.jpg&quot;);"><span class="b-tabSort-content__site">Одностраничный сайт</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Александр Недвижимость</span><span class="b-tabSort-content__block-line"></span></span></a><a class="b-tabSort-content__item mix category-1" href="libs/otis/index.html" target="_blank" style="background-image:url(&quot;img/works/otis.jpg&quot;);"><span class="b-tabSort-content__site">Одностраничный сайт</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Отис</span><span class="b-tabSort-content__block-line"></span></span></a>
+                    <div class="b-tabSort-content j-tabSort-content-sort"><a class="b-tabSort-content__item mix category-3" href="https://www.spbsez.ru/" target="_blank" style="background-image:url(&quot;img/works/oez.jpg&quot;);"><span class="b-tabSort-content__site">Сайт компании</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Особая экономическая зона «Санкт-Петербург»</span><span class="b-tabSort-content__block-line"></span></span></a><a class="b-tabSort-content__item mix category-3" href="libs/crpp/index.html" target="_blank" style="background-image:url(&quot;img/works/crpp.jpg&quot;);"><span class="b-tabSort-content__site">Сайт компании</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Единый центр предпринимательства</span><span class="b-tabSort-content__block-line"></span></span></a><a class="b-tabSort-content__item mix category-3" href="libs/irline/index.html" target="_blank" style="background-image:url(&quot;img/works/irline.jpg&quot;);"><span class="b-tabSort-content__site">Сайт компании</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Перегородки Ирлайн</span><span class="b-tabSort-content__block-line"></span></span></a><a class="b-tabSort-content__item mix category-1" href="libs/proweb/index.html" target="_blank" style="background-image:url(&quot;img/works/proweb.jpg&quot;);"><span class="b-tabSort-content__site">Одностраничный сайт</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Маркетинговая компания PROWEB</span><span class="b-tabSort-content__block-line"></span></span></a><a class="b-tabSort-content__item mix category-3" href="libs/nordline/index.html" target="_blank" style="background-image:url(&quot;img/works/nordline.jpg&quot;);"><span class="b-tabSort-content__site">Сайт компании</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Экспедиторская компания</span><span class="b-tabSort-content__block-line"></span></span></a><a class="b-tabSort-content__item mix category-3" href="libs/happyChif/index.html" target="_blank" style="background-image:url(&quot;img/works/happyChif.jpg&quot;);"><span class="b-tabSort-content__site">Сайт компании</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Кухонное оборудование</span><span class="b-tabSort-content__block-line"></span></span></a><a class="b-tabSort-content__item mix category-1" href="libs/mebell/index.html" target="_blank" style="background-image:url(&quot;img/works/pallet.jpg&quot;);"><span class="b-tabSort-content__site">Одностраничный сайт</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Мебель из паллет</span><span class="b-tabSort-content__block-line"></span></span></a><a class="b-tabSort-content__item mix category-1" href="libs/azure/index.html" target="_blank" style="background-image:url(&quot;img/works/azure.jpg&quot;);"><span class="b-tabSort-content__site">Одностраничный сайт</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Апартаменты в Манхеттене</span><span class="b-tabSort-content__block-line"></span></span></a><a class="b-tabSort-content__item mix category-3" href="libs/cruiseEurope/index.html" target="_blank" style="background-image:url(&quot;img/works/cruise.jpg&quot;);"><span class="b-tabSort-content__site">Сайт компании</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Конференция 2018</span><span class="b-tabSort-content__block-line"></span></span></a><a class="b-tabSort-content__item mix category-2" href="libs/chocolate/index.html" target="_blank" style="background-image:url(&quot;img/works/amazing.jpg&quot;);"><span class="b-tabSort-content__site">Интернет магазин</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Интернет магазин шоколада</span><span class="b-tabSort-content__block-line"></span></span></a><a class="b-tabSort-content__item mix category-3" href="libs/zamerzaem/index.html" target="_blank" style="background-image:url(&quot;img/works/zamerzaem.jpg&quot;);"><span class="b-tabSort-content__site">Сайт компании</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Портал замерзаем</span><span class="b-tabSort-content__block-line"></span></span></a><a class="b-tabSort-content__item mix category-3" href="libs/ann/index.html" target="_blank" style="background-image:url(&quot;img/works/ann.jpg&quot;);"><span class="b-tabSort-content__site">Сайт компании</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Гостиница Аннушка</span><span class="b-tabSort-content__block-line"></span></span></a><a class="b-tabSort-content__item mix category-3" href="libs/greenpass/index.html" target="_blank" style="background-image:url(&quot;img/works/greenpass.jpg&quot;);"><span class="b-tabSort-content__site">Сайт компании</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Транспортировка грузов</span><span class="b-tabSort-content__block-line"></span></span></a><a class="b-tabSort-content__item mix category-3" href="libs/tour/index.html" target="_blank" style="background-image:url(&quot;img/works/rusTour.jpg&quot;);"><span class="b-tabSort-content__site">Сайт компании</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Туроператор Русь-Тур</span><span class="b-tabSort-content__block-line"></span></span></a><a class="b-tabSort-content__item mix category-1" href="libs/nedv/index.html" target="_blank" style="background-image:url(&quot;img/works/nedv.jpg&quot;);"><span class="b-tabSort-content__site">Одностраничный сайт</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Александр Недвижимость</span><span class="b-tabSort-content__block-line"></span></span></a><a class="b-tabSort-content__item mix category-1" href="libs/otis/index.html" target="_blank" style="background-image:url(&quot;img/works/otis.jpg&quot;);"><span class="b-tabSort-content__site">Одностраничный сайт</span><span class="b-tabSort-content__block"><span class="b-tabSort-content__block-title">Отис</span><span class="b-tabSort-content__block-line"></span></span></a>
                     </div>
                 </div>
             </section>
