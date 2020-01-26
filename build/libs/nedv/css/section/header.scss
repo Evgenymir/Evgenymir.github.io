@@ -1,0 +1,75 @@
+/*===================================================
+	header
+=====================================================*/
+.header {
+	background: $white;
+	@extend %clearfix;
+
+}
+.header__left {
+	width: 41.2%;
+	float: left;
+}
+	.logo {
+		width: 178px;
+		margin: 5px 0 9px;
+	}
+	.logo__desc {
+		@include ptSans();
+		font-size: 0.75em;
+		color: $grey;
+	}
+.header__right {
+	width: 58.8%;
+	float: right;
+	@extend %clearfix;
+}
+	.header__years {
+		float: left;
+		padding-top: 25px
+	}
+		.header__years_number {
+			@include inlineBlock(middle);
+			@include ptSans(bold);
+			font-size: 3.56em;
+			color: $lightBlue;
+			line-height: 1;
+		}
+		.header__years_text {
+			width: 95px;
+			@include inlineBlock(middle);
+			@include ptSans();
+			font-size: 0.93em;
+			color: $textColor;
+			line-height: 1.1;
+		}
+	.header__contact {
+		float: right;
+		margin-top: 10px;
+		text-align: right;
+	}
+		.header__contact_title {
+			@include ptSans(bold);
+			font-size: 1em;
+			color: $textColor;
+		}
+		.header__contact_phone {
+			@include ptSans(bold);
+			font-size: 1.625em;
+			color: $textColor;
+			span {
+				color: $blue;
+			}
+		}
+		.header__contact_link {
+			@include ptSans();
+			font-size: 1em;
+			color: $blue;
+			text-decoration: none;
+			border-bottom: 1px solid $blue;
+			@include transition(all ease 0.5s);
+
+			&:hover {
+				border-bottom: 1px solid transparent; 
+			}
+		}

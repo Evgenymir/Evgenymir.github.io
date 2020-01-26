@@ -1,0 +1,166 @@
+/*===================================================
+	Главный экран
+=====================================================*/
+.mainScreen {
+	background: url(../images/bg/block1_bg.jpg) no-repeat center center;
+	@include backgroundSize(cover);
+	padding: 40px 0 35px;
+	
+	span {
+		@include ptSans(bold);
+		color: $textColor;
+	}
+}
+.mainScreen__title {
+	@include ptSans(bold);
+	font-size: 3.125em;
+	color: $blue;
+	margin-bottom: 35px;
+}
+.mainScreen__advantages_list {
+	@extend %clearfix;
+	margin-bottom: 45px;
+}
+	.mainScreen__advantages_item {
+		float: left;
+		margin-right: 50px;
+		&:last-child {
+			margin-right: 0;
+		}
+
+		.mainScreen__advantages_item_icon {
+			@include inlineBlock();
+			width: 32px;
+			height: 32px;
+			background: url(../images/sprite.png) no-repeat 0 0;
+			margin-right: 13px;
+		}
+
+		&:nth-child(2) {
+			.mainScreen__advantages_item_icon {
+				width: 29px;
+				height: 35px;
+				background-position: -40px 0;
+			}
+			.mainScreen__advantages_item_text {
+				width: 207px;
+			}
+		}
+		&:nth-child(3) {
+			.mainScreen__advantages_item_icon {
+				width: 30px;
+				height: 38px;
+				background-position: -76px 0;
+			}
+			.mainScreen__advantages_item_text {
+				width: 154px;
+			}
+		}
+		.mainScreen__advantages_item_text {
+			width: 171px;
+			@include inlineBlock();
+			@include ptSans();
+			font-size: 1em;
+			color: $textColor;
+		}
+	}
+.mainScreen__title_two {
+	@include ptSans(bold);
+	font-size: 1.5em;
+	color: $blue;
+}
+.mainScreen__title_two_desc {
+	@include ptSans();
+	font-size: 1.06em;
+	color: $textColor;
+	margin-bottom: 15px;
+}
+.mainScreen__title_two_desc_block {
+	max-width: 603px;
+	margin-bottom: 30px;
+
+	.mainScreen__title_two_desc_block_text {
+		position: relative;
+		max-width: 603px;
+		@include ptSans();
+		font-size: 1.06em;
+		color: $textColor;
+		@include boxSizing();
+		border: 3px solid $lightBlue;
+		@include borderRadius(5px);
+		background: #fff;
+		padding: 10px 14px 5px 24px;
+		margin-bottom: 20px;
+
+		&:before {
+			content: "";
+			display: block;
+			width: 18px;
+			height: 14px;
+			background: url(../images/sprite.png) no-repeat -154px -34px;
+			position: absolute;
+			bottom: -13px;
+			left: 0; right: 0;
+			margin: 0 auto;
+		}
+	}
+	.mainScreen__title_two_desc_block_comission {
+		@include ptSans(bold);
+		font-size: 1.125em;
+		color: $blue;
+		text-align: center;
+	}
+}
+.mainScreen__btn {
+	max-width: 609px;
+	@extend %clearfix;
+
+	.mainScreen__btn_left {
+		float: left;
+	}
+	.mainScreen__btn_scroll {
+		display: block;
+		@include ptSans(bold);
+		font-size: 0.68em;
+		padding: 17px 30px 13px;
+		@include borderRadius(25px);
+
+		.mainScreen__btn_scroll_span {
+			font-size: 2em;
+			color: #fff;
+		}
+
+	}
+
+	.mainScreen__btn_right {
+		float: right;
+	}
+	.mainScreen__btn_wrap_link {
+		display: block;
+		text-align: center;
+		padding: 11px 30px 11px 40px;
+		border: 3px solid $brown;
+		@include boxSizing();
+		@include borderRadius(20px);
+		margin-bottom: 11px;
+
+		&:hover {
+			.mainScreen__btn_link {
+				border-color: transparent;
+			}
+		}
+		.mainScreen__btn_link {
+			@include ptSans();
+			font-size: 0.875em;
+			color: $brown;
+			text-decoration: none;
+			border-bottom: 1px dashed $brown;
+			@include transition(all ease 0.5s);
+
+			.mainScreen__btn_link_span {
+				@include ptSans(bold);
+				font-size: 1.125em;
+			}
+		}
+	}
+}

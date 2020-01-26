@@ -1,0 +1,222 @@
+/*===================================================
+	footer
+=====================================================*/
+.footer {
+	background: $white;
+	padding: 50px 0 200px;
+	text-align: center;
+}
+.footer__title {
+	@include ptSans(bold);
+	font-size: 1.875em;
+	color: $blue;
+	margin-bottom: 20px;
+}
+.footer__btn {
+	@include ptSans(bold);
+	font-size: 1.5em;
+	margin-bottom: 60px;
+}
+.footer__line {
+	width: 100%;
+	height: 3px;
+	background: #f5f5f5;
+	margin-bottom: 20px;
+}
+.footer__left {
+	text-align: left;
+	float: left;
+	@include ptSans();
+	font-size: 1.062em;
+	color: $textColor;
+}
+	.footer__contact_phone {
+		@include ptSans(bold);
+		font-size: 1.625em;
+		color: $textColor;
+		margin-bottom: 8px;
+
+		span {
+			color: $blue;
+		}
+	}
+.footer__right {
+	float: right;
+}
+.footer__right_text {
+	@include inlineBlock(middle);
+	@include ptSans(bold);
+	font-size: 1.062em;
+	color: $textColor;
+	margin-right: 10px;
+}
+.footer__right_img {
+	@include inlineBlock(middle);
+}
+
+/*===================================================
+	подложка
+=====================================================*/
+.overlay__foto {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(187, 209, 226, 0.8);
+	z-index: 8;
+}
+.overlay {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #000;
+	opacity: .8;
+	z-index: 20;
+}
+/*===================================================
+	всплывающие формы
+=====================================================*/
+.popup {
+	position: fixed;
+	top: 0; right: 0; left: -10000px; bottom: 0;
+	max-width: 577px;
+	min-height: 22em;
+	max-height: 23.5em;
+	@include borderRadius(8px);
+	@include boxSizing();
+	background: #fff;
+	margin: auto;
+	padding: 25px 30px 35px;
+	@extend %clearfix;
+	opacity: 0;
+	z-index: 100;
+}
+.callback {
+	min-height: 22em;
+	max-height: 22em;
+}
+.popupTwo, .popupThree {
+	min-height: 22em;
+	max-height: 26em;
+}
+.popupFive {
+	min-height: 22em;
+	max-height: 32em;
+}
+.popup__close {
+	width: 30px;
+	height: 30px;
+	background: url(../images/sprite.png) no-repeat -177px -34px;
+	position: absolute;
+	top: 12px;
+	right: 15px;
+}
+.popup__title {
+	max-width: 430px;
+	@include ptSans(bold);
+	font-size: 1.125em;
+	color: $textColor;
+	margin-bottom: 20px;
+}
+.popup__left {
+	max-width: 51.9%;
+	float: left;
+}
+	.popup__form {
+		@include ptSans();
+		font-size: 0.875em;
+		color: $textColor;
+		.form__title {
+			display: block;
+			margin: 10px 0;
+		}
+		.name,
+		.phone,
+		.popup__comment {
+			width: 100%;
+			border: none;
+			border-top: 1px solid #c5c5c5;
+			border-left: 1px solid #c5c5c5;
+			background: #f4f4f4;
+			@include boxSizing();
+			padding: 14px 10px 14px 16px;
+			margin-bottom: 20px;
+		}
+		.popup__comment {
+			height: 8em;
+		}
+		.popup__btn {
+			width: 100%;
+			@include ptSans(bold);
+			line-height: 1;
+			border: none;
+			cursor: pointer;
+			padding-left: 20px;
+			padding-right: 20px;
+
+			.popup__btn_big_text {
+				font-size: 1.125em;
+			}
+
+			.popup__btn_small_text {
+				font-size: 0.875em;
+			}
+
+			&:focus, :hover, :active {
+				outline: 0;
+				outline-offset: 0;
+			}
+		}
+	}
+.popup__right {
+	max-width: 32%;
+	float: right;
+}
+	.popup__img {
+		border: 4px solid $lightBlue;
+		@include borderRadius(10px);
+		img {
+			width: 100%;
+			@include borderRadius(7px);
+			margin-bottom: -6px;
+		}
+	}
+/*===================================================
+	popup спасибо
+=====================================================*/
+.popup__thanks {
+	display: none;
+	max-width: 535px;
+	min-height: 10em;
+	max-height: 12em;
+	position: fixed;
+	right: 0; left: 0; top: 0; bottom: 0;
+	@include borderRadius(8px);
+	@include boxSizing();
+	background: #fff;
+	margin: auto;
+	padding: 40px 30px 35px;
+	text-align: center;
+	opacity: 0;
+	z-index: 100;
+}
+#thanks_callback {
+	max-height: 10em;
+}
+.popup__thanks_title {
+	@include ptSans(bold);
+	font-size: 1.5em;
+	color: $textColor;
+	margin-bottom: 18px;
+}
+.popup__thanks_text {
+	@include ptSans();
+	font-size: 1.125em;
+	color: $textColor;
+	line-height: 1.2;
+}

@@ -1,0 +1,355 @@
+/*===================================================
+	блок отзывы
+=====================================================*/
+.reviews {
+	background: $white;
+	padding: 70px 0;
+	position: relative;
+}
+.reviews__title {
+	@include ptSans(bold);
+	font-size: 2.875em;
+	color: $black;
+	margin-bottom: 45px;
+}
+.reviews__slider_wrap {
+	position: relative;
+}
+.reviews__slider {
+	@extend %clearfix;
+	margin-bottom: 100px;
+}
+.reviews__slider_item_name {
+	@include ptSans(italic);
+	font-size: 1.062em;
+	color: $black;
+	margin-bottom: 18px;
+}
+.reviews__slider_item_left {
+	width: 23.2%;
+	float: left;
+	margin-left: 4.5%;
+}
+	.reviews__slider_item_left_img {
+		border: 3px solid $borderBlue;
+		@include borderRadius(10px);
+		padding: 3px 3px 0 3px;
+		position: relative;
+
+		img {
+			width: 100%;
+			@include borderRadius(5px);
+			margin-bottom: -3px;
+		}
+	}
+	.reviews__slider_item_left_img2 {
+		width: 52%;
+		border: 3px solid $borderBlue;
+		@include borderRadius(10px);
+		padding: 3px 3px 0 3px;
+		position: absolute;
+		bottom: -93px;
+		right: -48px;
+		cursor: pointer;
+	}
+.reviews__slider_item_right {
+	width: 60.1%;
+	float: right;
+	margin-right: 4.5%;
+}
+	.reviews__slider_item_right_content {
+		border: 3px solid $borderBlue;
+		@include borderRadius(10px);
+		padding: 20px 40px 40px 20px;
+		position: relative;
+
+		&:before {
+			content: "";
+			display: block;
+			width: 13px;
+			height: 21px;
+			background: url(../images/sprite.png) no-repeat -156px -7px;
+			position: absolute;
+			top: 45%;
+			left: -13px;
+		}
+	}
+	.reviews__slider_item_right_content_title {
+		@include ptSans(bold);
+		font-size: 1.375em;
+		color: $blue;
+		margin-bottom: 15px;
+	}
+	.reviews__slider_item_right_content_desc_item {
+		@include ptSans();
+		font-size: 1.062em;
+		color: $textColor;
+		line-height: 1.1;
+		margin-bottom: 16px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.slider_control {
+		
+		.slider_control_prev, .slider_control_next {
+			position: absolute;
+			top: 45%;
+			width: 18px;
+			height: 31px;
+			background: url(../images/sprite.png) no-repeat;
+			cursor: pointer;
+			a {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+			}
+		}
+		.slider_control_prev {
+			left: 0;
+			background-position: -55px -68px;
+
+			&:hover {
+				background-position: -78px -68px;
+			}
+		}
+		.slider_control_next {
+			right: 0;
+			background-position: 0 -68px;
+
+			&:hover {
+				background-position: -22px -68px;
+			}
+		}
+	}
+.reviews__desc {
+	@include ptSans(bold);
+	font-size: 1.375em;
+	color: $blue;
+	text-align: center;
+	margin-top: 20px;
+}
+/*===================================================
+	блок наши достижения
+=====================================================*/
+.achievements {
+	background: #f5f5f5;
+	padding: 70px 0;
+	position: relative;
+}
+.achievements__title {
+	@include ptSans(bold);
+	font-size: 2.875em;
+	color: $black;
+	margin-bottom: 40px;
+}
+.achievements_wrap__slider {
+	position: relative;
+	@extend %clearfix;
+}
+.achievements__slider_width {
+	width: 72.9%;
+	margin: 0 auto;
+}
+.achievements__slider_item_img {
+	width: 211px;
+	border: 3px solid $borderBlue;
+	@include borderRadius(10px);
+	padding: 3px 3px 0 3px;
+	@include boxSizing();
+	background: #fff;
+	cursor: pointer;
+	img {
+		width: 100%;
+		@include borderRadius(5px);
+		margin-bottom: -3px;
+	}
+}
+.achievements_img_padding1 {
+	padding-top: 4.5em;
+	padding-bottom: 4.6em;
+}
+.achievements_img_padding2 {
+	padding-top: 4.5em;
+	padding-bottom: 4.3em;
+}
+
+.big__foto {
+	display: none;
+	width: 40%;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0;
+	right: 0;
+	z-index: 10;
+	background: #fff;
+	@include borderRadius(10px);
+	padding: 30px;
+	img {
+		width: 100%;
+	}
+}
+.close__btn {
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/sprite.png) no-repeat -122px 0;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+
+	&:hover {
+		background-position: -122px -20px;
+	}
+}
+/*===================================================
+	блок сотрудничество
+=====================================================*/
+.cooperation {
+	background: $white;
+	padding: 70px 0;
+	position: relative;
+}
+.cooperation__title {
+	max-width: 690px;
+	@include ptSans(bold);
+	font-size: 2.875em;
+	color: $black;
+	line-height: 1.1;
+	margin-bottom: 40px;
+}
+.cooperation__wrap_slider {
+	position: relative;
+	@extend %clearfix;
+}
+.cooperation__slider_width {
+	width: 72.9%;
+	margin: 0 auto;
+}
+.cooperation__slider_item_img {
+	width: 211px;
+	border: 3px solid $borderBlue;
+	@include borderRadius(10px);
+	padding: 3px 3px 0 3px;
+	@include boxSizing();
+	background: #fff;
+	cursor: pointer;
+	img {
+		width: 100%;
+		@include borderRadius(5px);
+		margin-bottom: -3px;
+	}
+}
+/*===================================================
+	блок сертификаты и свидетельства
+=====================================================*/
+.certificates {
+	background: $white;
+	padding: 70px 0;
+	position: relative;
+}
+.certificates__title {
+	@include ptSans(bold);
+	font-size: 2.875em;
+	color: $black;
+	margin-bottom: 40px;
+}
+.certificates__wrap_slider {
+	position: relative;
+	@extend %clearfix;
+}
+.certificates__slider_width {
+	width: 72.9%;
+	margin: 0 auto;
+}
+.certificates__slider_item_img {
+	width: 211px;
+	border: 3px solid $borderBlue;
+	@include borderRadius(10px);
+	padding: 3px 3px 0 3px;
+	@include boxSizing();
+	background: #fff;
+	cursor: pointer;
+	img {
+		width: 100%;
+		@include borderRadius(5px);
+		margin-bottom: -3px;
+	}
+}
+.certificates__slider_item_img_width {
+	text-align: center;
+	img {
+		width: 51%;
+	}
+}
+
+/*===================================================
+	блок наши издания
+=====================================================*/
+.publications {
+	background: #d1e4f5;
+	padding: 70px 0;
+	@include ptSans(bold);
+}
+.publications__wrap {
+	position: relative;
+}
+	.publications__title {
+		font-size: 2.875em;
+		color: $black;
+		margin-bottom: 30px;
+	}
+	.publications__desc {
+		max-width: 625px;
+		font-size: 1.375em;
+		color: $textColor;
+		line-height: 1.2;
+	}
+	.publications__books {
+		width: 24.5%;
+		position: absolute;
+		top: -95px;
+		right: -20px;
+
+		img {
+			width: 100%;
+		}
+	}
+/*===================================================
+	блок отделения
+=====================================================*/
+.offices {
+	background: $white;
+	padding: 70px 0;
+	position: relative;
+}
+.offices__title {
+	@include ptSans(bold);
+	font-size: 2.875em;
+	color: $black;
+	margin-bottom: 40px;
+}
+.offices__wrap_slider {
+	position: relative;
+	@extend %clearfix;
+}
+.offices__slider_width {
+	width: 86.5%;
+	margin: 0 auto;
+}
+.offices__slider_item_img {
+	width: 248px;
+	border: 3px solid $borderBlue;
+	@include borderRadius(10px);
+	padding: 3px 3px 0 3px;
+	@include boxSizing();
+	background: #fff;
+	cursor: pointer;
+	img {
+		width: 100%;
+		@include borderRadius(5px);
+		margin-bottom: -3px;
+	}
+}

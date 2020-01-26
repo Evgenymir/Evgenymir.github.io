@@ -1,0 +1,67 @@
+// Миксины
+@mixin borderRadius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	-o-border-radius: $radius;
+	border-radius: $radius;
+}
+@mixin backgroundSize($item) {
+	-webkit-background-size: $item;
+	-moz-background-size: $item;
+	-ms-background-size: $item;
+	-o-background-size: $item;
+	background-size: $item;
+}
+@mixin transition($value) {
+	-webkit-transition: $value;
+	-moz-transition: $value;
+	-ms-transition: $value;
+	-o-transition: $value;
+	transition: $value;
+}
+@mixin transform($form) {
+	-webkit-transform: $form;
+	-moz-transform: $form;
+	-ms-transform: $form;
+	-o-transform: $form;
+	transform: $form;
+}
+@mixin boxShadow($shadow) {
+	-webkit-box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+	-ms-box-shadow: $shadow;
+	-o-box-shadow: $shadow;
+	box-shadow: $shadow;
+}
+@mixin boxSizing($box: border-box) {
+	-webkit-box-sizing: $box;
+	-moz-box-sizing: $box;
+	-ms-box-sizing: $box;
+	-o-box-sizing: $box;
+	box-sizing: $box;
+}
+@mixin inlineBlock($vAlign: top) {
+	display: inline-block;
+	vertical-align: $vAlign;
+}
+
+// Плейсхолдеры
+%clearfix {
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }  
+}
+
+//responsive
+@function rem($px) {
+	@return $px / 16px +0rem;
+}

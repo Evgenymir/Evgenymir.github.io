@@ -1,0 +1,145 @@
+/*===================================================
+	блок предложений
+=====================================================*/
+.offers {
+	background: #fff;
+	padding: 70px 0;
+}
+.offers__title {
+	max-width: 743px;
+	@include ptSans(bold);
+	font-size: 2.875em;
+	color: $black;
+	line-height: 1.1;
+	margin-bottom: 15px;
+}
+.offers__title_desc {
+	@include ptSans(bold);
+	font-size: 1.625em;
+	color: $black;
+	margin-bottom: 35px;
+}
+.offers__content {
+	@extend %clearfix;
+	margin-bottom: 45px;
+}
+	.offers__content_left {
+		max-width: 73.6%;
+		float: left;
+		border: 3px solid $borderBlue;
+		@include borderRadius(10px);
+		@include boxSizing();
+		padding: 15px 50px 33px 30px;
+		position: relative;
+
+		&:after {
+			content: "";
+			display: block;
+			width: 13px;
+			height: 21px;
+			background: url(../images/sprite.png) no-repeat -154px -50px;
+			position: absolute;
+			top: 45%;
+			right: -13px;
+		}
+	}
+		.offers__content_left_title {
+			@include ptSans(bold);
+			font-size: 1.375em;
+			color: $blue;
+			margin-bottom: 30px;
+		}
+		.offers__content_left_item {
+			@include ptSans();
+			font-size: 1.062em;
+			color: $textColor;
+			margin-bottom: 20px;
+			line-height: 1.1;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+	.offers__content_right {
+		max-width: 23.1%;
+		@include ptSans();
+		font-size: 1.062em;
+		color: $textColor;
+		float: right;
+	}
+		.offers__content_right_img {
+			border: 3px solid $borderBlue;
+			@include borderRadius(8px);
+			padding: 3px 3px 0 3px;
+			margin-bottom: 16px;
+
+			img {
+				@include borderRadius(5px);
+				width: 100%;
+				margin-bottom: -3px;
+			}
+		}
+		.offers__content_right_name {
+			@include ptSans(italic);
+			margin-bottom: 8px;
+		}
+.offers__link_wrap {
+	text-align: center;
+}
+.offers__link {
+	@include ptSans();
+	font-size: 1.062em;
+	color: $blue;
+	text-decoration: none;
+	border-bottom: 1px solid $blue;
+	@include transition(all ease 0.5s);
+
+	&:hover {
+		border-color: transparent;
+	}
+}
+/*===================================================
+	блок бесплатной консультации
+=====================================================*/
+.freeConsultation {
+	background: url(../images/bg/freeConsultation.jpg) no-repeat center center;
+	@include backgroundSize(cover);
+	padding: 70px 0;
+}
+.freeConsultation__wrap {
+	max-width: 570px;
+	float: right;
+}
+.freeConsultation__item {
+	@include ptSans();
+	font-size: 1.062em;
+	color: $textColor;
+	margin-bottom: 40px;
+
+	&:last-child {
+		margin-bottom: 25px;
+	}
+}
+.freeConsultation__item_title {
+	@include ptSans(bold);
+	font-size: 1.25em;
+	color: $blue;
+	margin-bottom: 25px;
+	position: relative;
+
+	&:before {
+		content: "";
+		display: block;
+		width: 10px;
+		height: 10px;
+		background: $blue;
+		@include borderRadius(50%);
+		position: absolute;
+		top: 11px;
+		left: -26px;
+	}
+}
+.freeConsultation__btn {
+	@include ptSans(bold);
+	font-size: 1.125em;
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="favicon.png">
+	<title>Аннушка</title>
+	<!-- css -->
+	<link rel="stylesheet" href="css/main.css">
+	<!-- font -->
+	
+	<!-- js -->
+	<script src="js/modernizr.js"></script>
+
+</head>
+<body>
+	<!--[if lt IE 9]>
+		<p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="http://browsehappy.com">обновите</a></p>
+	<![endif]-->
+
+	<!--  / ========== header ========== \ -->
+	<header class="header header__white">
+		<div class="container">
+			<div class="header__menu__wrap">
+				<div class="menu__top__logo visible">
+					<a href="index.html" class="menu__top__logo__link">
+						<img src="images/logo2.png" alt="logo">
+					</a>
+				</div>
+				<nav class="menu">
+					<ul class="menu__list">
+						<li class="menu__lev0">
+							<a href="about.html" class="menu__link0">
+								О гостинице
+							</a>
+						</li>
+						<li class="menu__lev0">
+							<a href="rooms.html" class="menu__link0">
+								Номера
+							</a>
+						</li>
+						<li class="menu__lev0">
+							<a href="price.html" class="menu__link0">
+								Цены
+							</a>
+						</li>
+						<li class="menu__lev0">
+							<a href="reservation.html" class="menu__link0">
+								Бронирование
+							</a>
+						</li>
+						<li class="menu__lev0">
+							<a href="#" class="menu__link0">
+								Доп услуги
+							</a>
+						</li>
+						<li class="menu__lev0">
+							<a href="contacts.html" class="menu__link0">
+								Контакты
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="menu__top__btn_wrap visible">
+					<a href="#" class="button menu__top__button">
+						Забронировать
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+<!--  / ========== Блок контента ========== \ -->
+
+<div class="structure">
+	<div class="reservation__wrapper">
+		<div class="reservation__text">
+			<div class="container">
+				<div class="reservation__text__title">
+					Бронирование
+				</div>
+				<div class="reservation__text__desc">
+					Вы можете забронировать номер онлайн или позвонив по номеру: +7 812 703 30 90
+				</div>
+			</div>
+		</div>
+		<div class="reservation__form__block">
+			<div class="container">
+				<form action="mail.php" method="post" class="reservation__form">
+					<div class="reservation__form__wrap">
+						<div class="reservation__form__input">
+							<input type="text" name="reservation__date__arrival" class="header__form__date" placeholder="Дата заезда" required>
+							<span class="header__form__block_icon"></span>
+						</div>
+						<div class="reservation__form__input">
+							<input type="text" name="reservation__date__departure" class="header__form__date" placeholder="Дата отъезда" required>
+							<span class="header__form__block_icon"></span>
+						</div>
+						<div class="reservation__form__input">
+							<input type="text" name="reservation__parents" class="header__form__date" placeholder="Кол-во взрослых" required>
+						</div>
+						<div class="reservation__form__input">
+							<input type="text" name="reservation__childeren" class="header__form__date" placeholder="Кол-во детей">
+						</div>
+						<button type="submit" class="button reservation__form__button">Подобрать номер</button>
+					</div>
+					<div class="reservation__form__desc">
+						Бронируйте сейчас и получите комплимент от отеля!
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="hotelServices__icon">
+			<div class="container">
+				<div class="hotelServices__icon__wrap">
+					<div class="hotelServices__icon__block">
+						<div class="hotelServices__icon__block__img">
+							<img src="images/servicesIcon/icon1.png" alt="icon">
+						</div>
+						<div class="hotelServices__icon__block__text">
+							<p>
+								Проживание детей до 3-х лет БЕСПЛАТНО (предоставление детской кроватки по требованию).
+							</p>
+						</div>
+					</div>
+					<div class="hotelServices__icon__block">
+						<div class="hotelServices__icon__block__img">
+							<img src="images/servicesIcon/icon2.png" alt="icon">
+						</div>
+						<div class="hotelServices__icon__block__text">
+							<p>
+								Стоимость дополнительного места 1500 руб./сут. (25.04.17-30.06.17 стоимость доп. места 2000 руб/сут.)
+							</p>
+						</div>
+					</div>
+					<div class="hotelServices__icon__block">
+						<div class="hotelServices__icon__block__img">
+							<img src="images/servicesIcon/icon3.png" alt="icon">
+						</div>
+						<div class="hotelServices__icon__block__text">
+							<p>
+								В стоимость проживания включен завтрак (шведский стол).Стоимость завтрака (шведский стол) 550 руб.
+							</p>
+						</div>
+					</div>
+					<div class="hotelServices__icon__block">
+						<div class="hotelServices__icon__block__img">
+							<img src="images/servicesIcon/icon4.png" alt="icon">
+						</div>
+						<div class="hotelServices__icon__block__text">
+							<p>
+								Проживание животного в номере 1000 руб./сут. По согласованию с администрацией отеля.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="reservation__slogan">
+			<div class="container">
+				<div class="twentyYears__wrap">
+					<div class="twentyYears__left ">
+						<h2 class="twentyYears__title reservation__title">
+							Забронируйте номер в нашем отеле легко и быстро!
+						</h2>
+					</div>
+					<div class="twentyYears__right">
+						<p class="twentyYears__desc reservation__desc">
+							Благодаря удобному сервису на сайте нашей компании забронировать номера в гостинице «Аннушка» - это удобно и просто. С помощью специального сервиса, позволяющего бронировать номера в режиме онлайн, Вы можете обеспечить себя комфортным жильем в Петербурге на время путешествия еще до начала поездки.
+						</p>
+						<p class="twentyYears__desc reservation__desc">
+							Прежде чем забронировать номер, вы имеете возможность ознакомиться с обстановкой помещений, в которых вы можете остановиться, – на нашем сайте есть детальные фотографии. На нашем сайте Вы можете не только забронировать гостиницу в СПб, но и отменить его в случае внезапного изменения ваших обстоятельств.
+						</p>
+						<p class="twentyYears__desc reservation__desc">
+							При желании бронирование номера можно осуществить и по телефону. Пообщайтесь с нашими консультантами, и Вам предоставят всю исчерпывающую информацию касательно нюансов бронирования номеров в нашем отеле, ознакомят с актуальными на данный момент специальными предложениями.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<!--  / ========== footer ========== \ -->
+
+	<footer class="footer">
+		<div class="footer__top">
+			<div class="container">
+				<div class="footer__top__left">
+					<div class="footer__top__left__img"></div>
+					<p class="footer__top__left__text">
+						Награда от Общественного Совета по развитию малого бизнеса при губернаторе Санкт-Петербурга
+					</p>
+				</div>
+				<div class="footer__top__right">
+					<ul class="footer__top__right__list">
+						<li class="footer__top__right__item">
+							<a href="#" class="footer__top__right__link">
+								<img src="images/tripAdvisor.png" alt="tripAdvisor">
+							</a>
+						</li>
+						<li class="footer__top__right__item">
+							<a href="#" class="footer__top__right__link">
+								<img src="images/expedia.png" alt="expedia">
+							</a>
+						</li>
+						<li class="footer__top__right__item">
+							<a href="#" class="footer__top__right__link">
+								<img src="images/booking.png" alt="booking">
+							</a>
+						</li>
+						<li class="footer__top__right__item">
+							<a href="#" class="footer__top__right__link">
+								<img src="images/ostrovok.png" alt="ostrovok">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="container">
+				<ul class="footer__bottom__list">
+					<li class="footer__bottom__item">
+						<p>198035, Россия, Санкт-Петербург</p>
+						<p>ул. Гапсальская, 2.</p>
+					</li>
+					<li class="footer__bottom__item">
+						<p>Тел.: +7-812-703-3090 (круглосуточно)</p>
+						<p>Факс: +7-812-251-33-16, +7-812-251-85-30</p>
+					</li>
+					<li class="footer__bottom__item">
+						<p>Е-mail: info@annhotel.ru</p>
+						<p>Skype: annhotel.ru</p>
+					</li>
+				</ul>
+				<div class="footer__bottom__wrap">
+					<div class="footer__bottom__copy">
+						<p>© 2011-2016 Гостиница Аннушка</p>
+					</div>
+					<div class="footer__bottom__webDom"></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Плашка перехода по страницам-->
+    <ul class="blockLinkPages">
+    	<li class="blockLinkPages__item">
+    		<a class="blockLinkPages__link" href="index.html" title="Главная">1</a>
+    	</li>
+      	<li class="blockLinkPages__item">
+      		<a class="blockLinkPages__link" href="about.html" title="О компании">2</a>
+      	</li>
+      	<li class="blockLinkPages__item">
+      		<a class="blockLinkPages__link" href="rooms.html" title="Номера">3</a>
+      	</li>
+      	<li class="blockLinkPages__item">
+      		<a class="blockLinkPages__link" href="price.html" title="Цены">4</a>
+      	</li>
+      	<li class="blockLinkPages__item">
+      		<a class="blockLinkPages__link active" href="reservation.html" title="Бронирование">5</a>
+      	</li>
+      	<li class="blockLinkPages__item">
+      		<a class="blockLinkPages__link" href="contacts.html" title="Контакты">6</a>
+      	</li>
+    </ul>
+
+	<!--  / ========== script ========== \ -->
+	
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="js/main.js"></script> -->
+</body>
+</html>

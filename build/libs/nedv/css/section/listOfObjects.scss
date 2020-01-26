@@ -1,0 +1,106 @@
+/*===================================================
+	список объектов
+=====================================================*/
+.listOfObjects {
+	background: #fff;
+	padding: 70px 0 35px;
+}
+.listOfObjects__title {
+	@include ptSans(bold);
+	font-size: 2.875em;
+	color: $black;
+	line-height: 1.1;
+	margin-bottom: 35px;
+
+	.listOfObjects__title_margin {
+		@include inlineBlock(middle);
+		width: 2%;
+		height: 3px;
+	}
+	.listOfObjects__title_margin2 {
+		@include inlineBlock(middle);
+		width: 20%;
+		height: 3px;
+	}
+}
+.listOfObjects__content {
+	@extend %clearfix;
+}
+.listOfObjects__content_left {
+	width: 52.6%;
+	float: left;
+}
+	.listOfObjects__content_left_title {
+		@include ptSans();
+		font-size: 1.375em;
+		color: $blue;
+		line-height: 1.2;
+		margin-bottom: 20px;
+		span {
+			@include ptSans(bold);
+		}
+	}
+	.listOfObjects__content_left_desc {
+		@include ptSans(bold);
+		font-size: 1.062em;
+		color: $textColor;
+		margin-bottom: 15px;
+	}
+	.listOfObjects__content_left_list {
+		margin-left: 16px;
+		margin-bottom: 25px;
+	}
+	.listOfObjects__content_left_item {
+		position: relative;
+		@include ptSans();
+		font-size: 0.937em;
+		color: $textColor;
+		margin-bottom: 17px;
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
+		span {
+			@include ptSans(bold);
+		}
+
+		&:before {
+			content: "";
+			display: block;
+			width: 9px;
+			height: 9px;
+			background: $blue;
+			@include borderRadius(50%);
+			position: absolute;
+			top: 6px;
+			left: -16px;
+		}
+	}
+	.listOfObjects__content_left_btn {
+		@include ptSans(bold);
+		font-size: 1.125em;
+		color: #fff;
+		line-height: 1.1;
+		span {
+			font-size: 0.875em;
+		}
+	}
+	.listOfObjects__content_left_img {
+		margin-top: 12px;
+		margin-left: 26%;
+	}
+
+.listOfObjects__content_right {
+	width: 47.4%;
+	float: right;
+	text-align: right;
+	padding-left: 4%;
+	@include boxSizing();
+}
+.listOfObjects__content_right_img {
+	@include inlineBlock();
+	
+	img {
+		width: 100%;
+	}
+}

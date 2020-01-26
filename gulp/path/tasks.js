@@ -14,5 +14,6 @@ module.exports = [
 	'./gulp/tasks/imageMin.js',
 	'./gulp/tasks/clean.js',
 	'./gulp/tasks/serve.js',
-	'./gulp/tasks/watch.js'
+	'./gulp/tasks/watch.js',
+	'./gulp/tasks/libs.js'
 ]

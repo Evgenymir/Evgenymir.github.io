@@ -29,7 +29,8 @@ $.gulp.task('default', $.gulp.series(
 		'scriptLibs',
 		'img',
 		'favicons',
-		'fonts'
+		'fonts',
+		'libs'
 	),
 	$.gulp.parallel(
 		'watch',
@@ -48,11 +49,8 @@ $.gulp.task('build', $.gulp.series(
 		'scriptLibs',
 		'img',
 		'favicons',
-		'fonts'
-	),
-	$.gulp.parallel(
-		'watch',
-		'serve'
+		'fonts',
+		'libs'
 	)
 ));
 
