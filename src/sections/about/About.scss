@@ -1,0 +1,80 @@
+@import "../../assets/scss/mixins";
+@import "../../assets/scss/variables";
+
+.b-about__block {
+    @include flex();
+
+    @include tablets {
+        display: block;
+    }
+}
+
+.b-about__left {
+    width: 38%;
+
+    @include laptop {
+        width: 30%;
+    }
+
+    @include tablets {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+.b-about__img {
+    display: block;
+    border: 10px solid #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px 0 rgba(0,0,0,0.4);
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        margin-bottom: -5px;
+    }
+
+    @include tablets {
+        margin-bottom: 15px;
+    }
+}
+
+.b-about__right {
+    width: 62%;
+    padding-left: 3%;
+
+    @include laptop {
+        width: 70%;
+    }
+
+    @include tablets {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+.b-about__text {
+    font-size: rem(18px);
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    ul {
+        text-transform: uppercase;
+        padding-left: 40px;
+        margin-bottom: 10px;
+        list-style: disc;
+
+        li {
+            color: $blue;
+        }
+
+        span {
+            color: $text;
+        }
+    }
+
+    @include phone {
+        text-align: justify;
+    }
+}

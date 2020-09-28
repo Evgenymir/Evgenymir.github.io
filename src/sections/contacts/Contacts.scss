@@ -1,0 +1,98 @@
+@import "../../assets/scss/mixins";
+@import "../../assets/scss/variables";
+
+.b-contact {
+    @include bg();
+    padding-bottom: 200px;
+
+    @include desctop {
+        padding-bottom: 170px;
+    }
+
+    @include tablets {
+        padding-bottom: 40px;
+    }
+
+    @include phone {
+        padding-bottom: 10px;
+    }
+}
+.b-contact__title {
+    color: $white;
+}
+.b-contact__list {
+    @include flex();
+    padding: 20px 0;
+
+    @include tablets {
+        padding: 0;
+    }
+
+    @include phone {
+        display: block;
+    }
+}
+.b-contact__list-item {
+    width: 25%;
+    text-align: center;
+    font-size: rem(20px);
+    color: $white;
+
+    &:hover {
+        .b-icon {
+            animation: pulse ease 1s;
+        }
+    }
+
+    a {
+        color: $white;
+        line-height: 1;
+    }
+
+    span {
+        @include inlineBlock(middle);
+    }
+
+    @include desctop {
+        font-size: rem(18px);
+    }
+
+    @include laptop {
+        width: 50%;
+        margin-bottom: 15px;
+    }
+
+    @include tablets {
+        text-align: left;
+    }
+
+    @include phone {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+.b-icon {
+    @include inlineBlock(middle);
+    fill: $blue;
+    margin-right: 15px;
+
+    @include desctop {
+        width: auto;
+        height: 25px;
+        margin-right: 10px;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

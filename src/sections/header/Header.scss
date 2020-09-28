@@ -1,0 +1,42 @@
+@import '../../assets/scss/mixins';
+
+.l-header {
+    position: fixed;
+    top: 0;
+    left: 0; right: 0;
+    padding: 5px 0;
+    z-index: 10;
+}
+
+.header-scroll {
+    background: rgba(0,0,0,0.7);
+
+    .b-logo {
+        border-width: 1px;
+        a {
+            font-size: rem(18px);
+        }
+    }
+
+    .b-menu__link {
+        padding: 10px;
+    }
+
+    .b-burger__line {
+        height: 3px;
+    }
+}
+
+.b-header {
+    @include flex();
+    align-items: center;
+}
+
+.b-header__left {
+    width: 30%;
+}
+
+.b-header__right {
+    width: 70%;
+    text-align: right;
+}
