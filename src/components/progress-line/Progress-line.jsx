@@ -13,11 +13,11 @@ class ProgressLine extends React.Component {
         const documentHeight = document.documentElement.scrollHeight;
         const windowHeight = window.innerHeight;
 
-        window.onscroll = () => {
-            const scroll = window.pageYOffset;
-            const value = Math.floor((scroll / (documentHeight - windowHeight)) * 100);
-            this.setState({ width: value });
-        };
+        window.addEventListener('scroll', () => {
+          const scroll = window.pageYOffset;
+          const value = Math.floor((scroll / (documentHeight - windowHeight)) * 100);
+          this.setState({ width: value });
+        });
     }
 
     render() {
